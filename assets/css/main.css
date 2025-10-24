@@ -20,7 +20,7 @@
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #ffffff; /* Default color used for the majority of the text content across the entire website */
+  --default-color: #58595b; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #7172ED; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #5846f9; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
@@ -778,6 +778,10 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
+
+
+
 .hero {
   width: 100%;
   min-height: 100vh;
@@ -785,11 +789,29 @@ section,
   padding: 120px 0 60px 0;
   display: flex;
   align-items: center;
+
   /* background: linear-gradient(45deg, var(--background-color) 0%, color-mix(in srgb, var(--surface-color), transparent 10%) 100%), url("../img/hero-bg.jpg") center center no-repeat; */
   background-color: hsla(282.72727272727275, 0%, 100%, 1);
       background-image: radial-gradient(circle at 100% 0%, hsla(0, 64%, 69%, 1) 0%, transparent 75%), radial-gradient(circle at 100% 100%, hsla(239.51612903225805, 77%, 68%, 1) 0%, transparent 75%), radial-gradient(circle at 0% 100%, hsla(275.60439560439556, 37%, 47%, 1) 0%, transparent 75%), radial-gradient(circle at 0% 0%, hsla(282.72727272727275, 100%, 87%, 1) 0%, transparent 75%);
       background-blend-mode: normal, normal, normal, normal;
   background-size: cover;
+}
+
+.star_banner {
+  width: 150%;
+  min-height: 50vh;
+  vertical-align: top;
+    margin-top: -300px;
+    position: relative;
+    padding: 60px 10px 0 0;
+    margin-left: -8px;
+    z-index: 1;
+}
+
+@media (min-aspect-ratio: 16/9){
+  .star_banner
+  width: 100%;
+  height: auto;
 }
 
 .hero h1 {
@@ -821,7 +843,10 @@ section,
 
 .hero .btn-get-started:hover {
   color: var(--accent-color);
-  background: var(--contrast-color);
+  background: background-color: hsla(282.72727272727275, 0%, 100%, 1);
+      background-image: radial-gradient(circle at 100% 0%, hsla(0, 64%, 69%, 1) 0%, transparent 75%), radial-gradient(circle at 100% 100%, hsla(239.51612903225805, 77%, 68%, 1) 0%, transparent 75%), radial-gradient(circle at 0% 100%, hsla(275.60439560439556, 37%, 47%, 1) 0%, transparent 75%), radial-gradient(circle at 0% 0%, hsla(282.72727272727275, 100%, 87%, 1) 0%, transparent 75%);
+      background-blend-mode: normal, normal, normal, normal;
+  background-size: cover;
 }
 
 .hero .btn-watch-video {
